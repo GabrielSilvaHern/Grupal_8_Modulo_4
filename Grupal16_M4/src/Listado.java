@@ -16,7 +16,7 @@ public class Listado {
 
     public void analizarUsuario(){
         for(Usuario u: usuarios){
-            System.out.println(u.analizarUsuario());
+            u.analizarUsuario();
         }
     }
 }

@@ -28,14 +28,15 @@ public class Profesional extends Usuario{
         this.fechaIngreso = fechaIngreso;
     }
 
-    public String analizarUsuario() {
-        return this.toString();
+    public void analizarUsuario() {
+        super.analizarUsuario();
+        System.out.println("titulo: "+this.titulo+"\n"+
+                           "fecha de ingreso: "+this.fechaIngreso);
     }
 
     @Override
     public String toString() {
         return "Profesional " +
-                "\nNombre: "+super.analizarUsuario()+", "+
                 "titulo: '" + titulo + '\'' +
                 ", fechaIngreso: '" + fechaIngreso + '\'';
     }

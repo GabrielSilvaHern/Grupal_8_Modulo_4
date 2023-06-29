@@ -99,14 +99,22 @@ public class Cliente extends Usuario {
     }
 
     @Override
-    public String analizarUsuario() {
-        return this.toString();
+    public void analizarUsuario() {
+        super.analizarUsuario();
+        System.out.println("rut: "+this.rut+"\n"+
+                           "nombres: "+this.nombres+"\n"+
+                           "apellidos: "+this.apellidos+"\n"+
+                           "telefono: "+this.telefono+"\n"+
+                           "afp: "+this.afp+"\n"+
+                           "sistema de salud: "+this.sistemaSalud+"\n"+
+                           "dirección: "+this.direccion+"\n"+
+                           "comuna: "+this.comuna+"\n"+
+                           "edad: "+this.edad);
     }
 
     @Override
     public String toString() {
         return "Cliente " +
-                "\nNombre: "+super.analizarUsuario()+", "+
                 "rut: " + rut +
                 ", nombres: '" + nombres + '\'' +
                 ", apellidos: '" + apellidos + '\'' +

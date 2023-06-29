@@ -41,8 +41,8 @@ public class Usuario implements Asesoria{
     }
 
     @Override
-    public String analizarUsuario() {
-        return this.nombre;
+    public void analizarUsuario() {
+        System.out.println("\nnombre: "+this.nombre);
     }
     @Override
     public String toString() {
